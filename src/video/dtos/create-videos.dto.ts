@@ -1,6 +1,6 @@
-import { Field, InputType } from "@nestjs/graphql";
+import { ArgsType, Field} from "@nestjs/graphql";
 
-@InputType()
+@ArgsType()
 export class createVideosDto {
     @Field(type => String)
      name : string;
