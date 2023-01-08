@@ -4,6 +4,12 @@ import { Field, ObjectType } from "@nestjs/graphql";
 export class Video {
     @Field(() => String)
     name: string;
-    @Field(() => Boolean,{nullable:true})
-    isGood? : boolean
+    @Field(() => Boolean)
+    isHeros: boolean;
+
+    @Field(type => String)
+    genre : string;
+
+    @Field(type => String)
+    heroName : string;
 }
